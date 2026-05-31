@@ -1,6 +1,6 @@
 # Sistema de Gestión de Consultorio Médico
 
-## 📌 Descripción del proyecto
+## Descripción del proyecto
 
 Este proyecto consiste en un sistema de gestión para un consultorio médico desarrollado en Java, el cual permite administrar doctores, pacientes y citas médicas de manera organizada.
 
@@ -8,7 +8,7 @@ El sistema incluye un inicio de sesión para el administrador y maneja la persis
 
 ---
 
-## ⚙️ Funcionalidades
+## Funcionalidades
 
 - Inicio de sesión de administrador
 - Registro de doctores
@@ -22,7 +22,7 @@ El sistema incluye un inicio de sesión para el administrador y maneja la persis
 
 ---
 
-## 🧠 Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - Java
 - Programación Orientada a Objetos (POO)
@@ -31,7 +31,7 @@ El sistema incluye un inicio de sesión para el administrador y maneja la persis
 
 ---
 
-## 🏗️ Estructura del proyecto
+## Estructura del proyecto
 
 - Persona (clase base)
 - Doctor (hereda de Persona)
@@ -41,7 +41,7 @@ El sistema incluye un inicio de sesión para el administrador y maneja la persis
 
 ---
 
-## 💾 Persistencia de datos
+## Persistencia de datos
 
 El sistema guarda automáticamente la información en archivos `.csv`, lo que permite:
 
@@ -53,7 +53,7 @@ Aunque el programa se cierre, los datos se conservan y se vuelven a cargar al in
 
 ---
 
-## ▶️ Cómo ejecutar el proyecto
+## Cómo ejecutar el proyecto
 
 1. Abrir el proyecto en IntelliJ IDEA o cualquier IDE de Java
 2. Ejecutar la clase principal
@@ -62,14 +62,14 @@ Aunque el programa se cierre, los datos se conservan y se vuelven a cargar al in
 
 ---
 
-## 👨‍💻 Autor
+##  Autor
 
-Desarrollado por: Elías León
+Desarrollado por: Bernardo Elias León León
 
 Este proyecto fue realizado como práctica de Programación Orientada a Objetos en Java, aplicando estructuras reales de un sistema administrativo.
 
 ---
 
-## 📌 Nota personal
+## Nota personal
 
 Este proyecto me ayudó a comprender mejor la programación orientada a objetos, especialmente la relación entre clases, la persistencia de datos y la importancia de estructurar un sistema completo desde cero.
