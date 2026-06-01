@@ -4,7 +4,7 @@
 
 Este proyecto consiste en un sistema de gestión para un consultorio médico desarrollado en Java, el cual permite administrar doctores, pacientes y citas médicas de manera organizada.
 
-El sistema incluye un inicio de sesión para el administrador y maneja la persistencia de datos mediante archivos CSV, lo que permite que la información se conserve incluso después de cerrar el programa.
+El sistema incluye un inicio de sesión para el administrador y maneja la persistencia de datos mediante archivos CSV, permitiendo que la información se conserve incluso después de cerrar el programa.
 
 ## Funcionalidades
 
@@ -12,31 +12,33 @@ El sistema incluye un inicio de sesión para el administrador y maneja la persis
 - Registro de doctores.
 - Registro de pacientes.
 - Creación de citas médicas.
-- Visualización de doctores.
-- Visualización de pacientes.
-- Visualización de citas.
-- Relación entre doctor y paciente en una cita.
+- Visualización de doctores registrados.
+- Visualización de pacientes registrados.
+- Visualización de citas médicas.
+- Relación entre doctor y paciente en cada cita.
 - Persistencia de datos mediante archivos CSV.
 
 ## Tecnologías utilizadas
 
-- Java.
-- Programación Orientada a Objetos (POO).
-- FileReader.
-- FileWriter.
-- BufferedReader.
-- Archivos CSV.
-- IntelliJ IDEA.
-- Git y GitHub.
+- Java 11
+- Programación Orientada a Objetos (POO)
+- IntelliJ IDEA
+- Git
+- GitHub
+- FileReader
+- FileWriter
+- BufferedReader
+- Archivos CSV
 
 ## Instalación y configuración
 
-1. Instalar JDK 11.
+1. Instalar Java Development Kit (JDK) versión 11.
 2. Instalar IntelliJ IDEA.
-3. Clonar el repositorio desde GitHub.
-4. Abrir el proyecto en IntelliJ IDEA.
-5. Compilar y ejecutar la clase Main.
-6. Verificar que exista la carpeta db para el almacenamiento de datos.
+3. Instalar Git.
+4. Clonar o descargar el repositorio desde GitHub.
+5. Abrir el proyecto en IntelliJ IDEA.
+6. Verificar que exista la carpeta **db** para el almacenamiento de archivos CSV.
+7. Ejecutar la clase **Main.java**.
 
 ## Uso del programa
 
@@ -46,30 +48,69 @@ El sistema incluye un inicio de sesión para el administrador y maneja la persis
 4. Registrar pacientes.
 5. Crear citas médicas.
 6. Consultar la información almacenada.
-7. Los datos permanecerán guardados en archivos CSV incluso después de cerrar la aplicación.
+7. Cerrar la aplicación cuando se desee.
+
+### Credenciales predeterminadas
+
+Usuario:
+
+```text
+admin
+```
+
+Contraseña:
+
+```text
+admin123
+```
 
 ## Persistencia de datos
 
-El sistema guarda automáticamente la información en archivos CSV, permitiendo conservar:
+La aplicación almacena la información en archivos CSV dentro de la carpeta **db**.
+
+Los datos que se almacenan son:
 
 - Doctores registrados.
 - Pacientes registrados.
 - Citas médicas registradas.
 
-Al reiniciar la aplicación, los datos son cargados nuevamente desde los archivos almacenados.
+Al volver a ejecutar el programa, la información es cargada automáticamente desde los archivos CSV existentes.
+
+## Estructura del proyecto
+
+### Clases principales
+
+- **Persona:** clase abstracta base para los usuarios del sistema.
+- **Doctor:** representa a los doctores registrados.
+- **Paciente:** representa a los pacientes registrados.
+- **Cita:** representa una cita médica y relaciona un doctor con un paciente.
+- **Administrador:** representa al usuario con acceso al sistema.
+
+### Clases de servicio
+
+- **LoginService:** valida las credenciales de acceso.
+- **ArchivoManager:** administra la lectura y escritura de archivos CSV.
+- **CitaService:** administra la creación y búsqueda de citas.
+
+### Interfaz
+
+- **Menu:** administra la interacción con el usuario mediante consola.
+- **Main:** punto de inicio de la aplicación.
 
 ## Créditos
 
 Desarrollado por:
 
-Bernardo Elias León León
+**Bernardo Elias León León**
 
 Proyecto realizado para la materia de Computación en Java.
 
 ## Licencia
 
-Este proyecto se desarrolla con fines académicos y educativos.
+Este proyecto fue desarrollado con fines académicos y educativos.
+
+Su distribución y uso están permitidos únicamente para actividades relacionadas con el aprendizaje y la práctica de programación.
 
 ## Nota personal
 
-Este proyecto me ayudó a comprender mejor la programación orientada a objetos, especialmente la relación entre clases, la persistencia de datos y la importancia de estructurar un sistema completo desde cero. También reforcé el uso de Git, GitHub y el manejo de archivos para almacenar información de forma permanente.
+Este proyecto me ayudó a comprender mejor la programación orientada a objetos, especialmente la herencia, el uso de clases abstractas, la relación entre objetos y la persistencia de datos mediante archivos CSV. También reforcé mis conocimientos en Git, GitHub y el manejo de excepciones para desarrollar una aplicación más completa y funcional.
